@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root{
+    --primary-bright-red:hsl(12, 88%, 59%);
+    --darker-bright-red:hsl(12, 76%, 51%);
+    --primary-dark-blue:hsl(228, 39%, 23%);
+    --neutral-dark-grayish-blue:hsl(227, 12%, 61%);
+    --neutral-very-dark-blue:hsl(233, 12%, 13%);
+    --neutral-very-pale-red:hsl(13, 100%, 96%);
+    --neutral-very-light-grey:hsl(0, 0%, 98%);
+}
+
+.desktop-header{
+    display: none;
+}
+
+body{
+    background-color: aqua;
+}
+
+@media screen and (min-width:375px){
+    .mobile-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-header #mobile_logo{
+        margin: 1rem;
+    }
+
+    .mobile-header #hamburger_logo{
+        margin: 1rem;
+    }
+
+    .first-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .first-section img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .first-section h1{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .first-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .first-section a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: var(--primary-bright-red);
+        color: var(--neutral-very-light-grey);
+        border-radius: 30px;
+        padding: 13px 25px;
+        transition: ease-in-out 0.5s;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .first-section a:hover{
+        background-color: var(--darker-bright-red);
+    }
+
+    .second-section article h1{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .second-section article p{
+        font-size: 1rem;
+        text-align: center;
+        color: var(--neutral-dark-grayish-blue);
+    }
+
+    .second-section article h2 span{
+        background-color: var(--primary-bright-red);
+        color: var(--neutral-very-light-grey);
+        padding: 10px 15px;
+        border-radius: 18px;
+    }
+}
