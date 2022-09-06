@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,14 +23,27 @@
     display: none;
 }
 
+.mobile-navigation{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.mobile-navigation nav ul{
+    font-weight: 500;
+}
+
 body{
-    background-color: aqua;
+    background-color: white;
+    font-family: "Be Vietnam Pro";
 }
 
 @media screen and (min-width:375px){
     .mobile-header{
         display: flex;
         justify-content: space-between;
+        margin-top: 2rem;
     }
 
     .mobile-header #mobile_logo{
@@ -56,11 +71,15 @@ body{
         font-size: 2rem;
         font-weight: 700;
         text-align: center;
+        padding: 0 32px;
     }
 
     .first-section p {
         font-size: 1rem;
         text-align: center;
+        padding: 0 32px;
+        margin: 2rem 0;
+        color: var(--neutral-dark-grayish-blue);
     }
 
     .first-section a {
@@ -75,26 +94,250 @@ body{
         margin-bottom: 3rem;
     }
 
-    .first-section a:hover{
+    /* .first-section a:hover{
         background-color: var(--darker-bright-red);
-    }
+    } */
 
     .second-section article h1{
         font-size: 2rem;
         font-weight: 700;
         text-align: center;
+        padding: 0 32px;
     }
 
     .second-section article p{
         font-size: 1rem;
         text-align: center;
         color: var(--neutral-dark-grayish-blue);
+        margin: 2rem 0;
+        padding: 0 32px;
     }
 
     .second-section article h2 span{
         background-color: var(--primary-bright-red);
         color: var(--neutral-very-light-grey);
-        padding: 10px 15px;
+        padding: 10px 25px;
         border-radius: 18px;
     }
+
+    .second-section article h2{
+        background-color: var(--neutral-very-pale-red);
+        padding: 10px 0;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    /*SECTION 3 & 4*/
+
+    .third-section {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .third-section h1{
+        color: var(--primary-dark-blue);
+        font-size: 2rem;
+        text-align: center;
+        /* width: 75%; */
+        font-weight: 600;
+        /* margin-top: 4rem; */
+        padding: 0 32px;
+    }
+
+    .third-section p{
+        margin-bottom: 2rem;
+        padding: 0 32px;
+        color: var(--neutral-dark-grayish-blue);
+    }
+
+    .third-section a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: var(--primary-bright-red);
+        color: var(--neutral-very-light-grey);
+        border-radius: 30px;
+        padding: 13px 25px;
+        transition: ease-in-out 0.5s;
+    }
+
+    .third-section h2{
+        color: var(--primary-dark-blue);
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .third-section article{
+        margin-top: 32px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 300px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        object-fit: cover;
+        margin: 0 auto;
+        height: 90px;
+        margin-bottom: 1.5rem;
+      }
+
+      .swiper-pagination span{
+        background-color: orange;
+      }
+
+    .fourth-section {
+        background-color: var(--darker-bright-red);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourth-section h1{
+        color: var(--neutral-very-light-grey);
+        font-size: 2rem;
+        text-align: center;
+        width: 75%;
+        font-weight: 600;
+        margin-top: 4rem;
+        padding: 0 32px;
+    }
+
+    .fourth-section a {
+        text-decoration: none;
+        background-color: var(--neutral-very-light-grey); 
+        color: var(--primary-bright-red);
+        border-radius: 30px;
+        padding: 13px 25px;
+        transition: ease-in-out 0.5s;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    footer{
+        background-color: var(--neutral-very-dark-blue);
+    }
+
+    .inbox_update{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .inbox_update input{
+        margin-right: 0.5rem;
+        border-radius: 20px;
+        padding: 13px 10px;
+    }
+
+    .inbox_update a{
+        text-decoration: none;
+        color: var(--neutral-very-pale-red);
+        background-color: var(--darker-bright-red);
+        padding: 13px 27px;
+        border-radius: 25px;
+        transition: 0.5s ease-in-out;
+    }
+
+    /* .inbox_update a:hover{
+        background-color: var(--neutral-very-pale-red);
+    } */
+
+    .nav_footer{
+        color: var(--neutral-very-light-grey);
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1.5rem 0;
+    }
+
+    .nav_footer nav ul{
+        margin: 5px 0;
+    }
+
+    .social_medias_logos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social_medias_logos img{
+        width: 100%;
+        max-width: 30px;
+    }
+
+    .copyright_footer{
+        margin-top: 2rem;
+    }
+
+    .copyright_footer img{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 180px;
+        display: flex;
+        filter: invert(97%) sepia(0%) saturate(7488%) hue-rotate(77deg) brightness(110%) contrast(100%);
+    }
+
+    .copyright_footer p {
+        color: var(--neutral-very-light-grey);
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:500px){
+    .second-section article h2{
+        background-color: var(--neutral-very-pale-red);
+        padding: 10px 0;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:800px){
+    .mobile-header{
+        display: none;
+    }
+
+    .desktop-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px;
+    }
+
+    .desktop-header nav ul{
+        display: inline;
+    }
+
 }
