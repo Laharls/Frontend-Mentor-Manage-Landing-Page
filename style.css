@@ -257,9 +257,17 @@ footer{
     margin: 3rem 0;
 }
 
+.mobile-nav-link nav ul li{
+    list-style: none;
+}
+
 .mobile-footer .mobile-nav-link nav ul{
     color: var(--neutral-very-light-grey);
     margin-bottom: 1rem;
+}
+
+.mobile-footer .mobile-nav-link nav ul:hover{
+    color: var(--primary-bright-red);
 }
 
 .mobile-footer .social-media-logos{
@@ -301,6 +309,11 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .desktop-header li{
+        list-style: none;
+        display: inline;
     }
 
     .desktop-header nav ul{
@@ -401,6 +414,10 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         width: 40%;
+    }
+
+    .desktop-nav-links li{
+        list-style: none;
     }
 
     .desktop-nav-links nav ul{
