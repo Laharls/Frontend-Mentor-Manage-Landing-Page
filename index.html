@@ -6,38 +6,19 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   
   <title>Frontend Mentor | Manage landing page</title>
 
 </head>
 <body>
+
   <header>
-
     <div class="desktop-header">
-      <img src="./images/logo.svg" alt="logo">
+      <img src="./images/logo.svg" alt="logo manage">
 
-      <nav>
-        <ul> <a href="#">Pricing</a> </ul>
-        <ul> <a href="#">Product</a> </ul>
-        <ul> <a href="#">About Us</a> </ul>
-        <ul> <a href="#">Careers</a> </ul>
-        <ul> <a href="#">Community</a> </ul>
-      </nav>
-
-      <a href="#">Get Started</a>
-    </div>
-
-    <div class="mobile-header">
-      <img src="./images/logo.svg" id="mobile_logo" alt="mobile logo">
-
-      <img src="./images/icon-hamburger.svg" id="hamburger_logo" alt="hamergur-icon">
-    </div>
-
-    <div class="mobile-navigation">
       <nav>
         <ul>Pricing</ul>
         <ul>Product</ul>
@@ -45,166 +26,252 @@
         <ul>Careers</ul>
         <ul>Community</ul>
       </nav>
+
+      <a href="#" class="button">Get Started</a>
     </div>
-    
+
+    <div class="mobile-header">
+      <img src="./images/logo.svg" alt="logo manage">
+
+      <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
+    </div>
   </header>
 
   <main>
     <section class="first-section">
-      <img src="./images/illustration-intro.svg" alt="intro_img">
+      <article class="flex-child flex-center">
+        <img src="./images/illustration-intro.svg" class="image" alt="illustration-intro">
+      </article>
 
-      <h1>Bring everyone together to build better products.</h1>
+      <article class="flex-child">
+        <h1 class="title">Bring everyone together to build better products.</h1>
 
-      <p>Manage makes it simple for software teams to plan day-to-day 
-        tasks while keeping the larger team goals in view.</p>
+        <div class="flex-center">
+          <p class="paragraph">Manage makes it simple for software teams to plan day-to-day 
+            tasks while keeping the larger team goals in view.
+          </p>
 
-      <a href="#">Get Started</a>
+          <a href="#" class="button">Get Started</a>
+        </div>
+
+        
+      </article>
     </section>
 
     <section class="second-section">
-      <article>
-        <h1>What’s different about Manage?</h1>
-
-        <p>Manage provides all the functionality your team needs, without 
+      <article class="flex-child">
+        <h1 class="title">What’s different about Manage?</h1>
+        
+        <p class="paragraph main-paragraph">Manage provides all the functionality your team needs, without 
           the complexity. Our software is tailor-made for modern digital 
-          product teams.</p>
-      </article>
-      
+          product teams. 
+        </p>
 
-      <article>
-        <h2><span>01</span> Track company-wide progress</h2>
-
-        <p>See how your day-to-day tasks fit into the wider vision. Go from 
-          tracking progress at the milestone level all the way done to the 
-          smallest of details. Never lose sight of the bigger picture again.</p>
       </article>
 
-      <article>
-        <h2><span>02</span> Advanced built-in reports</h2>
+      <div class="selling-product flex-child">
+        <article>
+          
+          <h2 class="title"><span>01</span> Track company-wide progress</h2>
 
-        <p>Set internal delivery estimates and track progress toward company 
-          goals. Our customisable dashboard helps you build out the reports 
-          you need to keep key stakeholders informed.</p>
-      </article>
-      
-      <article>
-        <h2><span>03</span> Everything you need in one place</h2>
+          <p class="paragraph">See how your day-to-day tasks fit into the wider vision. Go from 
+            tracking progress at the milestone level all the way done to the 
+            smallest of details. Never lose sight of the bigger picture again.</p>
+        </article>
 
-        <p>Stop jumping from one service to another to communicate, store files, 
-          track tasks and share documents. Manage offers an all-in-one team 
-          productivity solution.</p>
-      </article>
-      
+
+        <article>
+          
+          <h2 class="title"><span>02</span> Advanced built-in reports</h2>
+
+          <p class="paragraph">
+            Set internal delivery estimates and track progress toward company 
+            goals. Our customisable dashboard helps you build out the reports 
+            you need to keep key stakeholders informed.
+          </p>
+        </article>
+
+        <article>
+          
+          <h2 class="title"><span>03</span> Everything you need in one place</h2>
+
+          <p class="paragraph">
+            Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section class="third-section">
-      <h1>What they’ve said</h1>
+      <h1 class="title">What they’ve said</h1>
 
         <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <article>
-              <img src="./images/avatar-anisha.png" alt="anisha_profile_picture">
+            <article class="review">
+
+              <img src="./images/avatar-anisha.png" alt="">
       
-              <h2>Anisha Li</h2>
+              <h2 class="title">Anisha Li</h2>
       
-              <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+              <p class="paragraph">“Manage has supercharged our team’s workflow. The ability to maintain 
                 visibility on larger milestones at all times keeps everyone motivated.”
               </p>
             </article>
           </div>
 
           <div class="swiper-slide">
-            <article>
-              <img src="./images/avatar-ali.png" alt="ali_profile_picture">
+            <article class="review">
+
+              <img src="./images/avatar-ali.png" alt="">
       
-              <h2>Ali Bravo</h2>
+              <h2 class="title">Ali Bravo</h2>
       
-              <p>“We have been able to cancel so many other subscriptions since using 
+              <p class="paragraph">“We have been able to cancel so many other subscriptions since using 
                 Manage. There is no more cross-channel confusion and everyone is much 
                 more focused.”
               </p>
             </article>
           </div>
-          
+
+
           <div class="swiper-slide">
-            <article>
-              <img src="./images/avatar-richard.png" alt="richard_profile_picture">
+            <article class="review">
+
+              <img src="./images/avatar-richard.png" alt="">
       
-              <h2>Richard Watts</h2>
+              <h2 class="title">Richard Watts</h2>
       
-              <p>“Manage allows us to provide structure and process. It keeps us organized 
+              <p class="paragraph">“Manage allows us to provide structure and process. It keeps us organized 
                 and focused. I can’t stop recommending them to everyone I talk to!”
               </p>
             </article>
           </div>
 
           <div class="swiper-slide">
-            <article>
-              <img src="./images/avatar-shanai.png" alt="richard_profile_picture">
+            <article class="review">
+
+              <img src="./images/avatar-shanai.png" alt="">
       
-              <h2>Shanai Gough</h2>
+              <h2 class="title">Shanai Gough</h2>
       
-              <p>“Their software allows us to track, manage and collaborate on our projects 
+              <p class="paragraph">“Their software allows us to track, manage and collaborate on our projects 
                 from anywhere. It keeps the whole team in-sync without being intrusive.”
               </p>
             </article>
           </div>
-
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
 
-      <a href="#">Get Started</a>
+      <div class="wrapper-button-third-section">
+        <a href="#" class="button">Get Started</a>
+      </div>
+      
     </section>
 
     <section class="fourth-section">
-      <h1>Simplify how your team works today.</h1>
+      <div class="flex-child">
+        <h1 class="title">Simplify how your team works today.</h1>
+      </div>
 
-      <a href="#">Get Started</a>
+      <div class="flex-child">
+        <a href="#" class="button">Get Started</a>
+      </div>
     </section>
+
   </main>
 
-  
   <footer>
-    <div class="inbox_update">
-      <input type="text" placeholder="Updates in your inbox…" id="inbox_input">
+    <div class="desktop-footer">
+      <div class="desktop-logos">
+        <img src="./images/logo.svg" alt="">
 
-      <a href="#" id="inbox_button">Go</a>
+        <div>
+          <a href="#"> <img src="./images/icon-facebook.svg" alt=""></a>
+          <a href="#"> <img src="./images/icon-youtube.svg" alt=""></a>
+          <a href="#"> <img src="./images/icon-twitter.svg" alt=""></a>
+          <a href="#"> <img src="./images/icon-pinterest.svg" alt=""></a>
+          <a href="#"> <img src="./images/icon-instagram.svg" alt=""></a>
+        </div>
+      
+      </div>
+
+      <div class="desktop-nav-links">
+        <div>
+          <nav>
+            <ul>Home</ul>
+            <ul>Pricing</ul>
+            <ul>Products</ul>
+            <ul>About Us</ul>
+          </nav>
+        </div>
+
+        <div>
+          <nav>
+            <ul>Careers</ul>
+            <ul>Community</ul>
+            <ul>Privacy Policy</ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="newsletter-copyright">
+        <div class="input-inbox">
+          <input type="email" placeholder="Updates in your inbox…">
+  
+          <a href="#" class="button">Go</a>
+        </div>
+
+        <p class="paragraph">Copyright 2020. All Rights Reserved</p>
+      </div>
+
     </div>
 
-    <div class="nav_footer">
-      <nav>
-        <ul>Home</ul>
-        <ul>Pricing</ul>
-        <ul>Products</ul>
-        <ul>About us</ul>
-      </nav>
-      <nav>
-        <ul>Careers</ul>
-        <ul>Community</ul>
-        <ul>Privacy Policy</ul>
-      </nav>
+    <div class="mobile-footer">
+      <div class="input-inbox">
+        <input type="email" placeholder="Updates in your inbox…">
+
+        <a href="#" class="button">Go</a>
+      </div>
+
+      <div class="mobile-nav-link">
+        <nav>
+          <ul>Home</ul>
+          <ul>Pricing</ul>
+          <ul>Products</ul>
+          <ul>About Us</ul>
+        </nav>
+
+        <nav>
+          <ul>Careers</ul>
+          <ul>Community</ul>
+          <ul>Privacy Policy</ul>
+        </nav>
+      </div>
+
+      <div class="social-media-logos">
+        <a href="#"> <img src="./images/icon-facebook.svg" alt=""></a>
+        <a href="#"> <img src="./images/icon-youtube.svg" alt=""></a>
+        <a href="#"> <img src="./images/icon-twitter.svg" alt=""></a>
+        <a href="#"> <img src="./images/icon-pinterest.svg" alt=""></a>
+        <a href="#"> <img src="./images/icon-instagram.svg" alt=""></a>
+      </div>
+
+      <div class="copyright">
+        <img src="./images/logo.svg" alt="logo manage">
+  
+        <p class="paragraph">Copyright 2020. All Rights Reserved</p>
+      </div>
     </div>
 
-    <div class="social_medias_logos">
-      <img src="./images/icon-facebook.svg" alt="facebook_icon">
-      <img src="./images/icon-youtube.svg" alt="youtube_icon">
-      <img src="./images/icon-twitter.svg" alt="twitter_icon">
-      <img src="./images/icon-pinterest.svg" alt="pinterest_icon">
-      <img src="./images/icon-instagram.svg" alt="instagram_icon">
-    </div>
-
-    <div class="copyright_footer">
-      <img src="./images/logo.svg" alt="footer_logo">
-
-      <p>Copyright 2020 All rights reserved</p>
-    </div>
-    
   </footer>
-
-  <script src="./app.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -212,9 +279,16 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>
